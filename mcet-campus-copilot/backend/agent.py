@@ -69,7 +69,7 @@ Return:
 5. For opportunity workflow include a useful tracking/action structure
 """
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.6-flash",
             contents=prompt
         )
         text = response.text or fallback(agent, goal, context)
